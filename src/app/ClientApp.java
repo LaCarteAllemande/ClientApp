@@ -26,6 +26,7 @@ public class ClientApp {
 	protected void connect() {
 		try {
 			while (true) {
+				//connexion protocolaire en utilisant l'utilitaire
 				String serverMessage = Utilitaire.decrypt(in.readLine());
 				System.out.println(serverMessage);
 				out.println(Utilitaire.encrypt(scanner.nextLine()));
